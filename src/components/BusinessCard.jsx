@@ -41,12 +41,8 @@ const BusinessCard = () => {
           </div>
           {/* Pangolin Spinner for loading screen */}
           {/* <div className="animate-pulse">
-                      <img
-                        src={Pangolin}
-                        alt="Loading"
-                        className="h-12 animate-spin"
-                      />
-                    </div> */}
+            <img src={Pangolin} alt="Loading" className="h-12 animate-spin" />
+          </div> */}
         </div>
       </div>
       ;
