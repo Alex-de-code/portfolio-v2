@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Pangolin from "./assets/pangolin-customized.svg";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 function App() {
   return (
@@ -33,14 +34,14 @@ function App() {
                         target="_blank"
                         className="hover:text-teal-200 transition-colors duration-200"
                       >
-                        Github
+                        <GitHubLogoIcon className="h-6 w-6" />
                       </a>
                       <a
                         href="https://www.linkedin.com/in/alexander-gonzalez-can-code/"
                         target="_blank"
                         className="hover:text-teal-200 transition-colors duration-200"
                       >
-                        Linkedin
+                        <LinkedInLogoIcon className="h-6 w-6" />
                       </a>
                     </div>
                   </div>
