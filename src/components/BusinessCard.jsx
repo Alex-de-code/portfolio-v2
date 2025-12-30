@@ -45,7 +45,6 @@ const BusinessCard = () => {
           </div> */}
         </div>
       </div>
-      ;
     </>
   );
 };
