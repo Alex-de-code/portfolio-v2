@@ -26,7 +26,7 @@ const AboutMe = () => {
           domains—contributing to AI protein engineering research, building
           AWS-powered analytics platforms through the{" "}
           <span className="text-white font-semibold hover:text-orange-400">
-            <a href="https://www.genspace.org/" target="_blank">
+            <a href="https://perscholas.org/" target="_blank">
               Per Scholas
             </a>
           </span>{" "}
@@ -34,7 +34,7 @@ const AboutMe = () => {
           software engineering fellowship, and participating in biotechnology
           research with CRISPR-Cas9 at{" "}
           <span className="text-white font-semibold hover:text-orange-400">
-            <a href="https://perscholas.org/" target="_blank">
+            <a href="https://www.genspace.org/" target="_blank">
               Genspace
             </a>
           </span>{" "}
