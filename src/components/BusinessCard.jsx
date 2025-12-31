@@ -6,7 +6,7 @@ const BusinessCard = () => {
     <>
       <div>
         <div className="grid gap-2">
-          <h1 className="text-4xl sm:text-5xl xl:text-6xl fond-bold text-white">
+          <h1 className="text-4xl sm:text-5xl  font-semibold text-white">
             Alexander Gonzalez
           </h1>
           <h2 className="text-xl text-gray-100">
