@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../App.css";
 import BusinessCard from "../components/BusinessCard.jsx";
 import AboutMe from "../components/AboutMe.jsx";
+import Experience from "../components/Experience.jsx";
 
 // const LandingPage = () => {
 //   return (
@@ -73,8 +74,11 @@ const LandingPage = () => {
         <div className="px-4 py-7 sm:p-8">
           <BusinessCard />
         </div>
-        <div className="p-4 sm:p-8 space-y-12">
-          <AboutMe />
+        <div className="p-4 sm:p-8 space-y-5">
+          <div className="mb-12">
+            <AboutMe />
+          </div>
+          <Experience />
         </div>
       </div>
 
@@ -90,9 +94,13 @@ const LandingPage = () => {
 
         {/* Right: Content - spans 8 columns */}
         <div className="col-span-6 overflow-y-auto">
-          <div className="pl-8 pr-20 py-24 space-y-20">
+          <div className="pl-8 pr-20 py-24 space-y-5">
             {/* Right padding 16, left padding 8 */}
-            <AboutMe />
+
+            <div className="mb-16">
+              <AboutMe />
+            </div>
+            <Experience />
 
             {/* Other sections */}
           </div>
