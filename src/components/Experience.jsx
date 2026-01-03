@@ -6,15 +6,39 @@ function Experience() {
       roleTitle: "People Engagement Lead",
       companyName: "Capgemini",
       workingPeriod: "January 2026 - Present",
-      description: `Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source.`,
-      links: [{ label: "Project Demo", url: "https://example.com" }],
-      skills: ["JavaScript", "React", "NextJS"],
+      description: `Design and implement AI-enhanced engagement programs that improve team collaboration and decision-making. Build agentic AI solutions integrated with platforms like Microsoft Teams to foster meaningful workplace connections.`,
+      links: [],
+      skills: [
+        "Agentic AI Development",
+        "Employee Engagement Strategy",
+        "Program & Budget Management",
+        "Stakeholder Collaboration",
+        "Microsoft Teams Integration",
+      ],
+    },
+    {
+      roleTitle: "AI Research Team Member",
+      companyName: "The Align Foundation & Genspace NYC",
+      workingPeriod: "July 2025 - Present",
+      description: `need proper description here....`,
+      links: [],
+      skills: ["need to list proper skills here"],
+    },
+    {
+      roleTitle: "AWS re/Start Trainee",
+      companyName: "Per Scholas",
+      workingPeriod: "August 2025 - November 2025",
+      description: `Complete intensive cloud computing training with hands-on AWS projects including EC2, S3, Lambda, and VPC infrastructure. Develop and deploy scalable cloud solutions while implementing security best practices and automation workflows.`,
+      links: [],
+      skills: [
+        "AWS Cloud Architecture",
+        "Terraform (IaC)",
+        "Linux Administration",
+        "CI/CD Pipelines",
+        "Cloud Networking (VPC)",
+        "Shell Scripting",
+        "Cloud Security",
+      ],
     },
   ];
 
@@ -22,17 +46,21 @@ function Experience() {
     <>
       {/* map through array of experience objects, will create conditional renders for relevant links section */}
       {experiencesData.map((experience) => (
-        <div className="grid grid-col-1 gap-1 text-gray-200 rounded-md p-3  hover:bg-white/10 hover:shadow  transition-colors duration-150">
+        <div className="grid grid-cols-1 gap-1 text-gray-200 rounded-md p-3  hover:bg-white/5 hover:shadow  transition-colors duration-150">
           <span className="flex flex-row justify-between items-center ">
             {/* experience title */}
             <h5 className="">{experience.roleTitle}</h5>
+
             {/* date range opportunity took place */}
-            <h4 className="mr-3 text-sm text-white/70">
+            <h3 className="mr-3 text-sm text-white/70 whitespace-nowrap">
               {experience.workingPeriod}
-            </h4>
+            </h3>
           </span>
+          <h4 className="text-sm text-white/70 font-normal">
+            {experience.companyName}
+          </h4>
           {/* job description */}
-          <p className="text-sm">{experience.description}</p>
+          <p className="text-sm leading-relaxed ">{experience.description}</p>
           {/* relevant links list */}
           {experience.links && experience.links.length > 0 && (
             <div className="flex flex-row mt-2">
@@ -50,12 +78,12 @@ function Experience() {
             </div>
           )}
           {experience.skills && experience.skills.length > 0 && (
-            <div className="flex flex-row space-x-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2">
               {/* skills list  */}
               {experience.skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="inline-block px-3 py-1 rounded-full text-sm bg-orange-400/10 text-orange-400"
+                  className="inline-block px-3 py-1 rounded-full text-sm bg-orange-400/10 text-orange-400 border border-orange-400/10  shadow-2xs"
                 >
                   {" "}
                   {skill}
