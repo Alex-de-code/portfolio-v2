@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <>
-      <div className="grid grid-col-1 gap-4 text-gray-200">
+      <div className="grid grid-col-1 gap-4 text-gray-200 ">
         <p>
           I work at the intersection of technology and human connection—whether
           that means engineering scalable software, troubleshooting IT systems,

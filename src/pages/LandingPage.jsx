@@ -3,6 +3,7 @@ import "../App.css";
 import BusinessCard from "../components/BusinessCard.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Experience from "../components/Experience.jsx";
+import Projects from "../components/Projects.jsx";
 
 // const LandingPage = () => {
 //   return (
@@ -79,6 +80,7 @@ const LandingPage = () => {
             <AboutMe />
           </div>
           <Experience />
+          <Projects />
         </div>
       </div>
 
@@ -101,6 +103,7 @@ const LandingPage = () => {
               <AboutMe />
             </div>
             <Experience />
+            <Projects />
 
             {/* Other sections */}
           </div>
