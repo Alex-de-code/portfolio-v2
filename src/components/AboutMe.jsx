@@ -10,7 +10,7 @@ const AboutMe = () => {
           creative problem-solving and a focus on real-world impact.
         </p>
         <p>
-          Currently a People Engagement Lead at{" "}
+          Currently a Geo ConnectX Mananger at{" "}
           <span className="text-white font-semibold hover:text-orange-400">
             <a href="https://www.capgemini.com/" target="_blank">
               Capgemini

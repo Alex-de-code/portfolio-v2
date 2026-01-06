@@ -1,6 +1,6 @@
 export const experiencesData = [
   {
-    roleTitle: "People Engagement Lead",
+    roleTitle: "Geo ConnectX Mananger (NE)",
     companyName: "Capgemini",
     workingPeriod: "January 2026 - Present",
     description: `Design and implement AI-enhanced engagement programs that improve team collaboration and decision-making. Build agentic AI solutions integrated with platforms like Microsoft Teams to foster meaningful workplace connections.`,

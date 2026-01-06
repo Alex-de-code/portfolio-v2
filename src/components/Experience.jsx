@@ -4,7 +4,7 @@ import { experiencesData } from "../data/experiences.js";
 function Experience() {
   return (
     <>
-      <hr className="border-2 rounded-2xl border-white/70" />
+      {/* <hr className="border-2 rounded-2xl border-white/70" /> */}
       {/* <h6 className="text-gray-200 text-xl text- ">Experience</h6> */}
       {/* map through array of experience objects, will create conditional renders for relevant links section */}
       {experiencesData.map((experience) => (
