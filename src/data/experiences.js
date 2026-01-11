@@ -1,7 +1,8 @@
 export const experiencesData = [
   {
-    roleTitle: "Geo ConnectX Mananger (NE)",
+    roleTitle: "Northeast Geo ConnectX Mananger",
     companyName: "Capgemini",
+    companySite: "https://www.capgemini.com/",
     workingPeriod: "January 2026 - Present",
     description: `Design and implement AI-enhanced engagement programs that improve team collaboration and decision-making. Build agentic AI solutions integrated with platforms like Microsoft Teams to foster meaningful workplace connections.`,
     links: [],
@@ -16,6 +17,7 @@ export const experiencesData = [
   {
     roleTitle: "AI Research Team Member",
     companyName: "The Align Foundation & Genspace NYC",
+    companySite: "https://alignbio.org/",
     workingPeriod: "July 2025 - Present",
     description: `Rsearch and evaluate AI models for protein engineering, analyzing benchmark performance in platforms like ProteinGym. Collaborate with cross-functional teams to define criteria for AI-driven enzyme design and prototype novel sequences.`,
     links: [],
@@ -30,6 +32,7 @@ export const experiencesData = [
   {
     roleTitle: "AWS re/Start Trainee",
     companyName: "Per Scholas",
+    companySite: "https://perscholas.org/",
     workingPeriod: "August 2025 - November 2025",
     description: `Complete intensive cloud computing training with hands-on AWS projects including EC2, S3, Lambda, and VPC infrastructure. Develop and deploy scalable cloud solutions while implementing security best practices and automation workflows.`,
     links: [
@@ -51,6 +54,7 @@ export const experiencesData = [
   {
     roleTitle: "Biotechnology Research Trainee",
     companyName: "Genspace",
+    companySite: "https://www.genspace.org/",
     workingPeriod: "January 2025 - April 2025",
     description:
       "Engineered CRISPR-based plasmids to inhibit bacterial biofilm production using molecular cloning techniques. Mastered PCR workflows and experimental design while documenting research processes for scientific reproducibility.",
@@ -66,6 +70,7 @@ export const experiencesData = [
   {
     roleTitle: "Full-Stack Development Fellow",
     companyName: "Pursuit Fellowship",
+    companySite: "https://www.pursuit.org/",
     workingPeriod: "June 2023 - August 2024",
     description:
       "Developed full-stack web applications using React, Node.js, and PostgreSQL in Agile team environments. Mentored peers on technical concepts and pitched project-based startup models to strengthen engineering and business communication skills.",
@@ -87,6 +92,7 @@ export const experiencesData = [
   {
     roleTitle: "Tech Interview Coordinator",
     companyName: "Capital One",
+    companySite: "https://www.capitalone.com/",
     workingPeriod: "December 2021 - December 2022",
     description:
       "Coordinated 30+ weekly technical interviews, managing scheduling and stakeholder communication. Identified workflow inefficiencies and implemented solutions that improved team efficiency by 24% while training new team members.",
@@ -102,6 +108,8 @@ export const experiencesData = [
   {
     roleTitle: "Personal Assistant",
     companyName: "CDPAP",
+    companySite:
+      "https://pplfirst.com/programs/new-york/ny-consumer-directed-personal-assistance-program-cdpap/",
     workingPeriod: "January 2023 - December 2025",
     description:
       "Provided personalized care by adapting communication and routines to individual needs, reducing patient agitation through tailored interventions. Maintained detailed records to optimize care plans and enhance client well-being.",
