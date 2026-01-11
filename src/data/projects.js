@@ -1,8 +1,9 @@
 export const projectsData = [
   {
     projectTitle: "Connections Bot",
-    imagePath: "../assets/wave-3.png",
-    description: `Automated contact management system that sends weekly Telegram reminders and updates Google Sheets with one click. Perfect for busy people who still want to be intentional with their treasured relationships.`,
+    imagePath: "src/assets/wave-3.png",
+    projectSite: "",
+    description: `Automated contact management system that sends weekly Telegram reminders and updates Google Sheets with one click. `,
     links: [
       {
         label: "Repo",
@@ -14,5 +15,18 @@ export const projectsData = [
       },
     ],
     tech: ["Pipedream", "Google Sheets API", "Telegram Bot API", "Loom"],
+  },
+  {
+    projectTitle: "Portfolio-v1",
+    imagePath: "src/assets/portfolio-v1.png",
+    projectSite: "https://alex-de-code-portfolio.netlify.app/",
+    description: `A personal portfolio website built with React and Vite, showcasing projects, skills, and experience in an interactive game world.`,
+    links: [
+      {
+        label: "Repo",
+        url: "https://github.com/Alex-de-code/portfolio-site",
+      },
+    ],
+    tech: ["React", "Kaplay.js", "Jotai"],
   },
 ];
