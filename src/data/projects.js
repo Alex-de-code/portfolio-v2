@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     projectTitle: "Connections Bot",
-    imagePath: "src/assets/wave-3.png",
+    imagePath: "src/assets/telegram_screenshot.png",
     projectSite: "",
     description: `Automated contact management system that sends weekly Telegram reminders and updates Google Sheets with one click. `,
     links: [
