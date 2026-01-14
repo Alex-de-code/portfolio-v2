@@ -15,6 +15,7 @@ export const projectsData = [
       },
     ],
     tech: ["Pipedream", "Google Sheets API", "Telegram Bot API", "Loom"],
+    categories: ["technical", "connector"],
   },
   {
     projectTitle: "Portfolio-v1",
@@ -28,5 +29,6 @@ export const projectsData = [
       },
     ],
     tech: ["React", "Kaplay.js", "Jotai"],
+    categories: ["technical", "creative"],
   },
 ];
