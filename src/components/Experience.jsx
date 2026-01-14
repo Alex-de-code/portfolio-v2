@@ -45,10 +45,10 @@ const Experience = () => {
                 className={`px-3 py-1.5 text-sm rounded-full transition-colors duration-150 ${
                   activeFilter === filter.id
                     ? "bg-white/10 text-white border border-white/20"
-                    : "bg-white/5 text-gray-300 border border-white/10 hover:bg-white/10 hover:text-white group"
+                    : "bg-white/1 text-gray-300/75 border border-white/10 hover:bg-white/10 hover:text-white group"
                 }`}
               >
-                <span className="group-hover:text-orange-400 transition-colors duration-150">
+                <span className="group-hover:text-white transition-colors duration-150">
                   {filter.label}
                 </span>
               </button>
