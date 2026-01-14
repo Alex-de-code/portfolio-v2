@@ -13,7 +13,7 @@ export const experiencesData = [
       "Stakeholder Collaboration",
       "Microsoft Teams Integration",
     ],
-    categories: ["leadership", "technical", "connector"],
+    categories: ["leadership", "technical", "connector", "client"],
   },
   {
     roleTitle: "AI Research Team Member",
@@ -109,7 +109,7 @@ export const experiencesData = [
       "Workflow Analysis",
       "Cross-Team Communication",
     ],
-    categories: ["leadership", "connector"],
+    categories: ["leadership", "connector", "client"],
   },
   {
     roleTitle: "Personal Assistant",
@@ -127,6 +127,6 @@ export const experiencesData = [
       "Adaptive Communication",
       "Medical Documentation",
     ],
-    categories: ["connector"],
+    categories: ["connector", "client"],
   },
 ];

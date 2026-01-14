@@ -1,8 +1,23 @@
+import { useState } from "react";
 import { projectsData } from "../data/projects.js";
 import Wave from "../assets/wave-3.png";
 import { ExternalLinkIcon, VideoIcon } from "@radix-ui/react-icons";
 
+const projectFilters = [
+  { id: "all", label: "All Projects" }, // Everything
+  { id: "technical", label: "Technical" }, // Coding, development, implementation
+  { id: "educator", label: "Educator" }, // Teaching, tutorials, documentation
+  { id: "strategist", label: "Strategist" }, // Planning, architecture, leadership
+  { id: "connector", label: "Connector" }, // User-focused, client-facing, collaboration
+];
 const Projects = () => {
+  const [activeFilter, setActiveFilter] = useState("all");
+
+  const filteredProjects =
+    activeFilter === "all"
+      ? projectsData
+      : projectsData.filter((p) => p.categories?.includes(activeFilter));
+
   const handleCardClick = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -10,8 +25,31 @@ const Projects = () => {
     <>
       <div>
         <h5 className="text-xl text-white mb-5 lg:hidden">Projects</h5>
+
+        <div className="hidden lg:block mb-6">
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-gray-400">View:</span>
+            <div className="flex flex-wrap gap-2">
+              {projectFilters.map((filter) => (
+                <button
+                  key={filter.id}
+                  onClick={() => setActiveFilter(filter.id)}
+                  className={`px-3 py-1.5 text-sm rounded-full transition-colors duration-150 ${
+                    activeFilter === filter.id
+                      ? "bg-white/10 text-white border border-white/20"
+                      : "bg-white/5 text-gray-300 border border-white/10 hover:bg-white/10 hover:text-white group"
+                  }`}
+                >
+                  <span className="group-hover:text-orange-400 transition-colors duration-150">
+                    {filter.label}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
         <div className="grid space-y-3">
-          {projectsData.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <div
               key={index} // Always include a key
               onClick={() => handleCardClick(project.projectSite)}
