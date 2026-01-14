@@ -13,6 +13,7 @@ export const experiencesData = [
       "Stakeholder Collaboration",
       "Microsoft Teams Integration",
     ],
+    categories: ["leadership", "technical", "connector"],
   },
   {
     roleTitle: "AI Research Team Member",
@@ -28,6 +29,7 @@ export const experiencesData = [
       "Cross-Functional Collaboration",
       "Scientific Methodology",
     ],
+    categories: ["technical", "educational"],
   },
   {
     roleTitle: "AWS re/Start Trainee",
@@ -50,6 +52,7 @@ export const experiencesData = [
       "Shell Scripting",
       "Cloud Security",
     ],
+    categories: ["technical", "educational"],
   },
   {
     roleTitle: "Biotechnology Research Trainee",
@@ -66,6 +69,7 @@ export const experiencesData = [
       "Experimental Design",
       "Scientific Documentation",
     ],
+    categories: ["technical", "educational"],
   },
   {
     roleTitle: "Full-Stack Development Fellow",
@@ -88,6 +92,7 @@ export const experiencesData = [
       "Agile Methodology",
       "Technical Mentoring",
     ],
+    categories: ["technical", "educational", "leadership"],
   },
   {
     roleTitle: "Tech Interview Coordinator",
@@ -104,6 +109,7 @@ export const experiencesData = [
       "Workflow Analysis",
       "Cross-Team Communication",
     ],
+    categories: ["leadership", "connector"],
   },
   {
     roleTitle: "Personal Assistant",
@@ -121,5 +127,6 @@ export const experiencesData = [
       "Adaptive Communication",
       "Medical Documentation",
     ],
+    categories: ["connector"],
   },
 ];
