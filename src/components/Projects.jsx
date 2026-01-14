@@ -3,13 +3,20 @@ import Wave from "../assets/wave-3.png";
 import { ExternalLinkIcon, VideoIcon } from "@radix-ui/react-icons";
 
 const Projects = () => {
+  const handleCardClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <>
       <div>
-        <div>Projects</div>
-        <div className="grid space-y-5">
-          {projectsData.map((project) => (
-            <a href={project.projectSite} target="_blank">
+        <h5 className="text-xl text-white mb-5 lg:hidden">Projects</h5>
+        <div className="grid space-y-3">
+          {projectsData.map((project, index) => (
+            <div
+              key={index} // Always include a key
+              onClick={() => handleCardClick(project.projectSite)}
+              className="cursor-pointer"
+            >
               <div className="group grid grid-cols-10 gap-1 text-gray-200 rounded-md p-3 hover:bg-white/5 hover:shadow  transition-colors duration-150">
                 <img
                   src={project.imagePath}
@@ -50,7 +57,7 @@ const Projects = () => {
                   )}
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

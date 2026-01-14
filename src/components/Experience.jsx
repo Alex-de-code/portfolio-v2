@@ -1,15 +1,28 @@
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { experiencesData } from "../data/experiences.js";
 
-function Experience() {
+const Experience = () => {
+  const handleCardClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  // const handleLinkClick = (e, url) => {
+  //   e.stopPropagation(); // Prevent card click
+  //   window.open(url, "_blank", "noopener,noreferrer");
+  // };
   return (
     <>
       {/* <hr className="border-2 rounded-2xl border-white/70" /> */}
       {/* <h6 className="text-gray-200 text-xl text- ">Experience</h6> */}
       {/* map through array of experience objects, will create conditional renders for relevant links section */}
-      <div className="grid space-y-5">
-        {experiencesData.map((experience) => (
-          <a href={experience.companySite} target="_blank">
+      <h5 className="text-xl text-white mb-5 lg:hidden">Experience</h5>
+      <div className="grid space-y-3">
+        {experiencesData.map((experience, index) => (
+          <div
+            key={index}
+            onClick={() => handleCardClick(experience.companySite)}
+            className="cursor-pointer"
+          >
             <div className="group grid grid-cols-1 gap-1 text-gray-200 rounded-md p-3  hover:bg-white/5 hover:shadow  transition-colors duration-150">
               <span className="flex flex-row justify-between items-center ">
                 {/* experience title */}
@@ -60,11 +73,11 @@ function Experience() {
                 </div>
               )}
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </>
   );
-}
+};
 
 export default Experience;
