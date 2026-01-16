@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     projectTitle: "Connections Bot",
-    imagePath: "public/telegram_screenshot.png",
+    imagePath: "/telegram_screenshot.png",
     projectSite: "",
     description: `Automated contact management system that sends weekly Telegram reminders and updates Google Sheets with one click. `,
     links: [
@@ -19,7 +19,7 @@ export const projectsData = [
   },
   {
     projectTitle: "Portfolio-v1",
-    imagePath: "public/portfolio-v1.png",
+    imagePath: "/portfolio-v1.png",
     projectSite: "https://alex-de-code-portfolio.netlify.app/",
     description: `A personal portfolio website built with React and Vite, showcasing projects, skills, and experience in an interactive game world.`,
     links: [
