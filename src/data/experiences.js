@@ -4,7 +4,7 @@ export const experiencesData = [
     companyName: "Capgemini",
     companySite: "https://www.capgemini.com/",
     workingPeriod: "January 2026 - Present",
-    description: `Design AI-enhanced engagement programs to improve team collaboration while supporting geo leaders through meeting coordination and stakeholder outreach. Evolving into strategic collaboration on regional programming and volunteer initiatives.`,
+    description: `Design AI-enhanced engagement programs while supporting geo leaders through strategic coordination. Oversee volunteer budgets and ensure programming aligns with company engagement goals across northeast cities.`,
     links: [],
     skills: [
       "Agentic AI Development",
