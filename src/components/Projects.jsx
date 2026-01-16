@@ -25,10 +25,9 @@ const Projects = () => {
     <>
       <div>
         <h5 className="text-xl text-white mb-5 lg:hidden">Projects</h5>
-
         <div className="hidden lg:block mb-6">
           <div className="flex items-center gap-3">
-            <span className="text-sm text-gray-400">View:</span>
+            <span className="text-sm text-gray-400">Focus:</span>
             <div className="flex flex-wrap gap-2">
               {projectFilters.map((filter) => (
                 <button
@@ -52,7 +51,14 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={index} // Always include a key
-              onClick={() => handleCardClick(project.projectSite)}
+              onClick={(e) => {
+                // Only trigger card click if NOT clicking on a link
+                const isLinkClick =
+                  e.target.closest("a") || e.target.closest("button");
+                if (!isLinkClick && project.projectSite) {
+                  handleCardClick(project.projectSite);
+                }
+              }}
               className="cursor-pointer"
             >
               <div className="group grid grid-cols-10 gap-1 text-gray-200 rounded-md p-3 hover:bg-white/5 hover:shadow  transition-colors duration-150">

@@ -4,10 +4,10 @@ import { experiencesData } from "../data/experiences.js";
 
 const experienceFilters = [
   { id: "all", label: "All Experience" }, // Everything
-  { id: "technical", label: "Technical Roles" }, // Coding, development, technical execution
-  { id: "educational", label: "Teaching Roles" }, // Education, mentoring, knowledge transfer
-  { id: "leadership", label: "Leadership Roles" }, // Management, strategy, team leadership
-  { id: "client", label: "Client-Facing Roles" }, // Consulting, client work, stakeholder management, customer service
+  { id: "technical", label: "Technical" }, // Coding, development, technical execution
+  { id: "educational", label: "Teaching" }, // Education, mentoring, knowledge transfer
+  { id: "leadership", label: "Leadership" }, // Management, strategy, team leadership
+  { id: "client", label: "Client-Facing" }, // Consulting, client work, stakeholder management, customer service
 ];
 
 const Experience = () => {
@@ -36,7 +36,7 @@ const Experience = () => {
       <h5 className="text-xl text-white mb-5 lg:hidden">Experience</h5>
       <div className="hidden lg:block mb-6">
         <div className="flex items-center gap-3">
-          <span className="text-sm text-gray-400">View:</span>
+          <span className="text-sm text-gray-400">Roles:</span>
           <div className="flex flex-wrap gap-2">
             {experienceFilters.map((filter) => (
               <button
@@ -60,7 +60,14 @@ const Experience = () => {
         {filteredExperiences.map((experience, index) => (
           <div
             key={index}
-            onClick={() => handleCardClick(experience.companySite)}
+            onClick={(e) => {
+              // Only trigger card click if NOT clicking on a link
+              const isLinkClick =
+                e.target.closest("a") || e.target.closest("button");
+              if (!isLinkClick && experience.companySite) {
+                handleCardClick(experience.companySite);
+              }
+            }}
             className="cursor-pointer"
           >
             <div className="group grid grid-cols-1 gap-1 text-gray-200 rounded-md p-3  hover:bg-white/5 hover:shadow  transition-colors duration-150">
