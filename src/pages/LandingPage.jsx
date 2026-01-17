@@ -118,7 +118,7 @@ const LandingPage = () => {
 
               {/* Table of Contents */}
               <div className="mt-12 toc-container">
-                <nav className="toc-nav">
+                <nav className="toc-nav" aria-label="Table of Contents">
                   <ul className="space-y-4">
                     <li>
                       <button

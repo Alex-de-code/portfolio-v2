@@ -25,9 +25,9 @@ const Experience = () => {
   };
 
   return (
-    <>
+    <section id="experience" aria-label="Work experience">
       {/* map through array of experience objects, will create conditional renders for relevant links section */}
-      <h5 className="text-xl text-white mb-5 lg:hidden">Experience</h5>
+      <h2 className="text-xl text-white mb-5 lg:hidden">Experience</h2>
       <div className="hidden lg:block mb-6">
         <div className="flex items-center gap-3">
           <span className="text-sm text-gray-400">Roles:</span>
@@ -67,18 +67,18 @@ const Experience = () => {
             <div className="group grid grid-cols-1 gap-1 text-gray-200 rounded-md p-3  hover:bg-white/5 hover:shadow  transition-colors duration-150">
               <span className="flex flex-row justify-between items-center ">
                 {/* experience title */}
-                <h5 className="font-medium group-hover:text-orange-400 transition-colors duration-150">
+                <h3 className="font-medium group-hover:text-orange-400 transition-colors duration-150">
                   {experience.roleTitle}
-                </h5>
+                </h3>
 
                 {/* date range opportunity took place */}
-                <h3 className="mr-3 text-sm text-white/70 whitespace-nowrap">
+                <p className="mr-3 text-sm text-white/70 whitespace-nowrap">
                   {experience.workingPeriod}
-                </h3>
+                </p>
               </span>
-              <h4 className="text-sm text-white/70 font-normal">
+              <p className="text-sm text-white/70 font-normal">
                 {experience.companyName}
-              </h4>
+              </p>
               {/* job description */}
               <p className="text-sm leading-relaxed ">
                 {experience.description}
@@ -91,7 +91,7 @@ const Experience = () => {
                       key={index}
                       href={link.url}
                       target="_blank"
-                      className="hover:text-teal-200 flex flex-row items-center text-white"
+                      className="hover:text-sky-400 flex flex-row items-center text-white"
                     >
                       <ExternalLinkIcon className="h-4 w-4 mr-1" />
                       <p className="text-sm">{link.label}</p>
@@ -117,7 +117,7 @@ const Experience = () => {
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
