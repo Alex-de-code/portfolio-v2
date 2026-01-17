@@ -170,10 +170,14 @@ const LandingPage = () => {
             style={{ height: "100vh" }} // Force height
           >
             <div className="pl-8 pr-20 py-24 space-y-5">
-              <div ref={aboutRef} id="about" className="section mb-16">
+              <div ref={aboutRef} id="about" className="section mb-24">
                 <AboutMe />
               </div>
-              <div ref={experienceRef} id="experience" className="section">
+              <div
+                ref={experienceRef}
+                id="experience"
+                className="section mb-24"
+              >
                 <Experience />
               </div>
               <div ref={projectsRef} id="projects" className="section">

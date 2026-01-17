@@ -91,6 +91,7 @@ const Experience = () => {
                       key={index}
                       href={link.url}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="hover:text-sky-400 flex flex-row items-center text-white"
                     >
                       <ExternalLinkIcon className="h-4 w-4 mr-1" />
