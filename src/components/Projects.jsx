@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { projectsData } from "../data/projects.js";
-import Wave from "../assets/wave-3.png";
 import { ExternalLinkIcon, VideoIcon } from "@radix-ui/react-icons";
 import portfolioImage from "../assets/portfolio-v1.png";
 import connectionsImage from "../assets/telegram_screenshot.png";

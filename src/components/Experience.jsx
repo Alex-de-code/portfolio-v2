@@ -24,14 +24,8 @@ const Experience = () => {
     }
   };
 
-  // const handleLinkClick = (e, url) => {
-  //   e.stopPropagation(); // Prevent card click
-  //   window.open(url, "_blank", "noopener,noreferrer");
-  // };
   return (
     <>
-      {/* <hr className="border-2 rounded-2xl border-white/70" /> */}
-      {/* <h6 className="text-gray-200 text-xl text- ">Experience</h6> */}
       {/* map through array of experience objects, will create conditional renders for relevant links section */}
       <h5 className="text-xl text-white mb-5 lg:hidden">Experience</h5>
       <div className="hidden lg:block mb-6">
@@ -111,7 +105,7 @@ const Experience = () => {
                   {experience.skills.map((skill, index) => (
                     <div
                       key={index}
-                      className="inline-block px-3 py-1 rounded-full text-sm bg-orange-400/10 text-orange-400 border border-orange-400/10 shadow-2xs"
+                      className="inline-block px-3 py-1 rounded-full text-sm bg-orange-500/30 text-white border border-orange-500/50 shadow-2xs"
                     >
                       {" "}
                       {skill}
