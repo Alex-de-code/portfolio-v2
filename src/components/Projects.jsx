@@ -63,7 +63,7 @@ const Projects = () => {
             >
               <div className="group grid grid-cols-10 gap-1 text-gray-200 rounded-md p-3 hover:bg-white/5 hover:shadow  transition-colors duration-150">
                 <img
-                  src={process.env.PUBLIC_URL + project.imagePath}
+                  src={`${process.env.PUBLIC_URL}${project.imagePath}`}
                   alt="placeholder image text"
                   className="mt-1 p-1 col-span-3 rounded-lg mask-radial-from-15% group-hover:mask-radial-from-90% "
                 />
