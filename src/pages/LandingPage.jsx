@@ -91,8 +91,10 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <main>
-      <div className="bg-teal-800 min-h-screen">
+    <div className="bg-teal-900 min-h-screen">
+      <h1 className="sr-only">Alexander Gonzalez - Portfolio Site</h1>
+
+      <main>
         {/* Mobile */}
         <div className="lg:hidden">
           <div className="px-4 py-7 sm:p-8">
@@ -183,8 +185,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 };
 

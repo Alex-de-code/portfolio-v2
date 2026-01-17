@@ -98,7 +98,7 @@ const Projects = () => {
                       {project.tech.map((tool, index) => (
                         <div
                           key={index}
-                          className="inline-block px-3 py-1 rounded-full text-sm bg-orange-400/10 text-orange-400 border border-orange-400/10 shadow-2xs"
+                          className="inline-block px-3 py-1 rounded-full text-sm  bg-orange-500/30 text-white border border-orange-500/50 shadow-2xs"
                         >
                           {tool}
                         </div>

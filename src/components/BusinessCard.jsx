@@ -4,14 +4,14 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 const BusinessCard = () => {
   return (
     <>
-      <div>
+      <section aria-label="Business Card">
         <div className="grid gap-2">
-          <h1 className="text-4xl sm:text-5xl  font-semibold text-white">
+          <h2 className="text-4xl sm:text-5xl  font-semibold text-white">
             Alexander Gonzalez
-          </h1>
-          <h2 className="text-xl text-gray-100">
-            Software Engineer / IT Professional
           </h2>
+          <p className="text-xl text-gray-100">
+            Software Engineer / IT Professional
+          </p>
           {/* <h3 className="text-xl font-extralight">
                       alias: Alex-de-code
                     </h3> */}
@@ -26,14 +26,18 @@ const BusinessCard = () => {
               <a
                 href="https://github.com/Alex-de-code/"
                 target="_blank"
-                className="hover:text-teal-200 transition-colors duration-200"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+                className="hover:text-sky-400 transition-colors duration-200"
               >
                 <GitHubLogoIcon className="h-6 w-6" />
               </a>
               <a
                 href="https://www.linkedin.com/in/alexander-gonzalez-can-code/"
                 target="_blank"
-                className="hover:text-teal-200 transition-colors duration-200"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+                className="hover:text-sky-400 transition-colors duration-200"
               >
                 <LinkedInLogoIcon className="h-6 w-6" />
               </a>
@@ -44,7 +48,7 @@ const BusinessCard = () => {
             <img src={Pangolin} alt="Loading" className="h-12 animate-spin" />
           </div> */}
         </div>
-      </div>
+      </section>
     </>
   );
 };
