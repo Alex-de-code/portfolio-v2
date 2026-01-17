@@ -2,6 +2,8 @@ import { useState } from "react";
 import { projectsData } from "../data/projects.js";
 import Wave from "../assets/wave-3.png";
 import { ExternalLinkIcon, VideoIcon } from "@radix-ui/react-icons";
+import portfolioImage from "../assets/portfolio-v1.png";
+import connectionsImage from "../assets/telegram_screenshot.png";
 
 const projectFilters = [
   { id: "all", label: "All Projects" }, // Everything
@@ -10,6 +12,11 @@ const projectFilters = [
   { id: "strategist", label: "Strategist" }, // Planning, architecture, leadership
   { id: "connector", label: "Connector" }, // User-focused, client-facing, collaboration
 ];
+
+const imageMap = {
+  "portfolio-v1": portfolioImage,
+  telegram_screenshot: connectionsImage,
+};
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -63,7 +70,7 @@ const Projects = () => {
             >
               <div className="group grid grid-cols-10 gap-1 text-gray-200 rounded-md p-3 hover:bg-white/5 hover:shadow  transition-colors duration-150">
                 <img
-                  src={`${process.env.PUBLIC_URL}${project.imagePath}`}
+                  src={imageMap[project.imageName]}
                   alt="placeholder image text"
                   className="mt-1 p-1 col-span-3 rounded-lg mask-radial-from-15% group-hover:mask-radial-from-90% "
                 />
