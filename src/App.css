@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/* public/index.css or src/index.css */
+html,
+body {
+  background-color: #134e4a !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  background-color: #134e4a;
+  min-height: 100vh;
+}
+
 :root {
   font-family: "TASA Orbiter", sans-serif;
 }
