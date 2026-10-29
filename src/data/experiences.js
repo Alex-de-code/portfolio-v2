@@ -1,6 +1,6 @@
 export const experiencesData = [
   {
-    roleTitle: "Northeast Geo ConnectX Mananger",
+    roleTitle: "Northeast Geo ConnectX Manager",
     companyName: "Capgemini",
     companySite: "https://www.capgemini.com/",
     workingPeriod: "January 2026 - Present",

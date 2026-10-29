@@ -13,7 +13,7 @@ const AboutMe = () => {
             on real-world impact.
           </p>
           <p>
-            Currently a Geo ConnectX Mananger at{" "}
+            Currently a Geo ConnectX Manager at{" "}
             <span className="text-white font-semibold hover:text-orange-400">
               <a href="https://www.capgemini.com/" target="_blank">
                 Capgemini
