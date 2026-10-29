@@ -16,10 +16,9 @@ const BusinessCard = () => {
                       alias: Alex-de-code
                     </h3> */}
           <div className="text-gray-200 text-base/6">
-            <p>
-              I build systems and lead teams to make positive changes in the
-              world.
-            </p>
+            <p>I build systems and lead teams</p>
+            <p>to make positive changes</p>
+            <p>in the world.</p>
           </div>
 
           <div>
