@@ -20,7 +20,7 @@ export const experiencesData = [
     companyName: "The Align Foundation & Genspace NYC",
     companySite: "https://alignbio.org/",
     workingPeriod: "July 2025 - Present",
-    description: `Rsearch and evaluate AI models for protein engineering, analyzing benchmark performance in platforms like ProteinGym. Collaborate with cross-functional teams to define criteria for AI-driven enzyme design and prototype novel sequences.`,
+    description: `Research and evaluate AI models for protein engineering, analyzing benchmark performance in platforms like ProteinGym. Collaborate with cross-functional teams to define criteria for AI-driven enzyme design and prototype novel sequences.`,
     links: [],
     skills: [
       "AI/ML Research",
