@@ -38,7 +38,7 @@ const AboutMe = () => {
               <a href="https://www.genspace.org/" target="_blank">
                 Genspace
               </a>
-            </span>{" "}
+            </span>
             . I have also built personal automation tools and rapid prototypes
             during hackathons. Each experience reinforces my drive to build
             technology that extends human capability, because every tool we
