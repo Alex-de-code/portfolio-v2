@@ -10,14 +10,16 @@ const BusinessCard = () => {
             Alexander Gonzalez
           </h2>
           <p className="text-xl text-gray-100">
-            Technical Project Manager | Full-Stack Developer | AWS Certified
+            Technical Project Manager · Full-Stack Developer · AWS Certified
           </p>
           {/* <h3 className="text-xl font-extralight">
                       alias: Alex-de-code
                     </h3> */}
           <div className="text-gray-200 text-base/6">
-            <p>I build systems and lead teams</p>
-            <p>to solve complex problems.</p>
+            <p>
+              I build systems and lead teams to make positive changes in the
+              world.
+            </p>
           </div>
 
           <div>
