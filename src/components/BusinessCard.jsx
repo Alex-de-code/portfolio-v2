@@ -11,9 +11,9 @@ const BusinessCard = () => {
           </h2>
           <div className="max-w-lg">
             <p className="text-lg text-gray-100">
-              Technical Project Manager · Full-Stack Developer
+              Program Manager · Technical Builder
             </p>
-            <p className="text-sm uppercase tracking-widest text-gray-300 mt-1">
+            <p className="text-base tracking-wide text-gray-200 mt-1">
               AWS Certified Cloud Practitioner
             </p>
           </div>
