@@ -6,23 +6,32 @@ const BusinessCard = () => {
     <>
       <section aria-label="Business Card">
         <div className="grid gap-2">
-          <h2 className="text-4xl sm:text-5xl  font-semibold text-white">
+          <h2 className="text-4xl sm:text-5xl font-semibold text-white">
             Alexander Gonzalez
           </h2>
-          <p className="text-xl text-gray-100">
+          <div className="max-w-lg">
+            <p className="text-lg text-gray-100">
+              Technical Project Manager · Full-Stack Developer
+            </p>
+            <p className="text-sm uppercase tracking-widest text-gray-300 mt-1">
+              AWS Certified Cloud Practitioner
+            </p>
+          </div>
+          {/* <p className="text-lg text-gray-100">
             Technical Project Manager · Full-Stack Developer · AWS Certified
-          </p>
+          </p> */}
+
           {/* <h3 className="text-xl font-extralight">
                       alias: Alex-de-code
                     </h3> */}
-          <div className="text-gray-200 text-base/6">
+          <div className="text-gray-200 text-base/6 mt-2">
             <p>I build systems and lead teams</p>
             <p>to make positive changes</p>
             <p>in the world.</p>
           </div>
 
           <div>
-            <div class="flex flex-wrap gap-4 text-gray-200">
+            <div className="flex flex-wrap gap-4 text-gray-200">
               <a
                 href="https://github.com/Alex-de-code/"
                 target="_blank"
