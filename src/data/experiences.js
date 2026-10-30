@@ -3,7 +3,7 @@ export const experiencesData = [
     roleTitle: "Northeast Geo ConnectX Manager",
     companyName: "Capgemini",
     companySite: "https://www.capgemini.com/",
-    workingPeriod: "January 2026 - Present",
+    workingPeriod: "January 2026 - October 2026",
     description: `Design AI-enhanced engagement programs while supporting geo leaders through strategic coordination. Oversee volunteer budgets and ensure programming aligns with company engagement goals across northeast cities.`,
     links: [],
     skills: [
@@ -19,7 +19,7 @@ export const experiencesData = [
     roleTitle: "AI Research Team Member",
     companyName: "The Align Foundation & Genspace NYC",
     companySite: "https://alignbio.org/",
-    workingPeriod: "July 2025 - Present",
+    workingPeriod: "July 2025 - January 2026",
     description: `Research and evaluate AI models for protein engineering, analyzing benchmark performance in platforms like ProteinGym. Collaborate with cross-functional teams to define criteria for AI-driven enzyme design and prototype novel sequences.`,
     links: [],
     skills: [
